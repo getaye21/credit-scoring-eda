@@ -1,0 +1,18 @@
+Credit Scoring EDA Summary
+==========================
+
+Dataset shape: (150000, 13)
+Overall default rate: 0.0668
+
+Top 5 risk factors (correlation with target):
+  NumberOfTime30-59DaysPastDueNotWorse: 0.1256
+  NumberOfTimes90DaysLate: 0.1172
+  NumberOfTime60-89DaysPastDueNotWorse: 0.1023
+  NumberOfDependents: 0.0460
+  RevolvingUtilizationOfUnsecuredLines: -0.0018
+
+Key insights:
+- RevolvingUtilizationOfUnsecuredLines > 1 is a strong warning sign.
+- Younger and older age groups have higher default rates.
+- DebtRatio alone is weakly correlated; but combined with other factors matters.
+- NumberOfTime30-59DaysPastDueNotWorse is a powerful predictor.
